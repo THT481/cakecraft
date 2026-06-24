@@ -21,7 +21,7 @@ loadCatalog();
 ensureSeed();
 
 const GEMINI_API_KEY = 'AIzaSyAz3ElYkrzRW795QaI_Kx1DVqMNFNUqFEw';
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
 async function callGemini(prompt, maxTokens = 600) {
   const res = await fetch(GEMINI_URL, {
