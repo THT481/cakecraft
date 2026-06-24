@@ -13,9 +13,8 @@ import {
 // ============================================
 export const ADMIN_EMAILS = [
   'thaihuutai42@gmail.com',
-  'quangctm07@gmail.com,
+  'quangctm07@gmail.com',
 ];
-
 export function isAdmin(user) {
   if (!user || !user.email) return false;
   return ADMIN_EMAILS.includes(user.email.toLowerCase());
