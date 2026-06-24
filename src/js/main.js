@@ -34,7 +34,7 @@ const state = {
 };
 
 // Gemini API Configuration
-const GEMINI_API_KEY = 'AIzaSyCQWTzKIIb7X1WwnJLO9T4D4wF_21qxKcI';
+const GEMINI_API_KEY = 'AIzaSyAz3ElYkrzRW795QaI_Kx1DVqMNFNUqFEw';
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
 // Phụ kiện trang trí (load từ Firestore) — dùng cho gợi ý upsell của AI
