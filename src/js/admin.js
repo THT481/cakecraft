@@ -13,6 +13,7 @@ import {
 // ============================================
 export const ADMIN_EMAILS = [
   'thaihuutai42@gmail.com',
+  'quangctm07@gmail.com,
 ];
 
 export function isAdmin(user) {
