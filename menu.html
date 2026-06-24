@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực đơn — CakeCraft</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="src/css/theme.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23E0A93C'/><text x='50' y='72' font-size='62' text-anchor='middle' fill='%2314100C' font-family='Trebuchet MS'>C</text></svg>">
+</head>
+<body>
+
+<section class="page-hero">
+  <div class="container-c">
+    <p class="breadcrumb-c reveal in"><a href="index.html">Trang chủ</a> / Thực đơn</p>
+    <span class="eyebrow reveal in">Bộ sưu tập</span>
+    <h1 class="title-c reveal in d1">Thực đơn <span class="it">ngọt ngào</span></h1>
+    <p class="subtitle-c mx-auto-c reveal in d2">Từ bánh sinh nhật cổ điển đến mousse mát lạnh — mỗi chiếc bánh là một niềm vui nhỏ.</p>
+  </div>
+</section>
+
+<section class="section-c" style="padding-top:1rem">
+  <div class="container-c">
+    <div class="cat-tabs reveal" id="catTabs">
+      <button class="cat-tab active" data-cat="all">Tất cả</button>
+      <button class="cat-tab" data-cat="kem">Bánh Kem</button>
+      <button class="cat-tab" data-cat="cupcake">Cupcake</button>
+      <button class="cat-tab" data-cat="mousse">Bánh Lạnh</button>
+      <button class="cat-tab" data-cat="special">Đặc Biệt</button>
+    </div>
+    <div class="product-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/SplitText.min.js"></script>
+<script type="module" src="src/js/menu.js"></script>
+</body>
+</html>

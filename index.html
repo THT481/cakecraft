@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CakeCraft — Tiệm bánh kem thiết kế cùng AI</title>
+  <meta name="description" content="CakeCraft: tự thiết kế bánh kem theo sự kiện, AI dựng và gợi ý phụ kiện hoàn hảo.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="src/css/theme.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23E0A93C'/><text x='50' y='72' font-size='62' text-anchor='middle' fill='%2314100C' font-family='Trebuchet MS'>C</text></svg>">
+</head>
+<body>
+
+<!-- HERO with interactive particle background -->
+<header class="hero-c">
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="container-c">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <span class="hero-eyebrow"><i class="bi bi-award"></i> Tiệm bánh thủ công · Est. 2026</span>
+        <h1 class="hero-title">Chiếc bánh<br><span class="grad">trong mơ</span><br>của riêng bạn</h1>
+        <p class="hero-sub">Tự tay dựng chiếc bánh — chọn hình dáng, tầng, màu kem, viết chữ — hoặc để AI dựng sẵn từ ý tưởng của bạn rồi tinh chỉnh đến từng chi tiết.</p>
+        <div class="hero-cta-row">
+          <a href="design.html" class="btn-c btn-primary-c"><i class="bi bi-magic"></i> Bắt đầu thiết kế</a>
+          <a href="menu.html" class="btn-c btn-ghost-c"><i class="bi bi-grid"></i> Xem thực đơn</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="n">16+</div><div class="l">Mẫu bánh</div></div>
+          <div class="hero-stat"><div class="n">100%</div><div class="l">Tùy biến</div></div>
+          <div class="hero-stat"><div class="n">AI</div><div class="l">Dựng &amp; gợi ý</div></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal in d2">
+        <div class="hero-frame">
+          <img class="hero-cake-img" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900&q=85" alt="Signature cake">
+        </div>
+        <div class="float-badge b1"><span class="ico"><i class="bi bi-stars"></i></span><div><div class="t">Thiết kế</div><div class="v">Theo ý bạn</div></div></div>
+        <div class="float-badge b2"><span class="ico"><i class="bi bi-patch-check"></i></span><div><div class="t">Nguyên liệu</div><div class="v">Tươi mỗi ngày</div></div></div>
+      </div>
+    </div>
+  </div>
+  <a href="#features" class="scroll-cue" aria-label="Cuộn xuống"><i class="bi bi-chevron-down"></i></a>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee-c">
+  <div class="marquee-track">
+    <span><span>Bánh sinh nhật</span><span class="star">/</span><span>Cupcake</span><span class="star">/</span><span>Bánh cưới</span><span class="star">/</span><span>Mousse mát lạnh</span><span class="star">/</span><span>Macaron</span><span class="star">/</span></span>
+    <span><span>Bánh sinh nhật</span><span class="star">/</span><span>Cupcake</span><span class="star">/</span><span>Bánh cưới</span><span class="star">/</span><span>Mousse mát lạnh</span><span class="star">/</span><span>Macaron</span><span class="star">/</span></span>
+  </div>
+</div>
+
+<!-- FEATURES — asymmetric bento -->
+<section class="section-c" id="features">
+  <div class="container-c">
+    <div class="features-head reveal">
+      <span class="eyebrow">Vì sao chọn CakeCraft</span>
+      <h2 class="title-c">Ngọt ngào từ <span class="it">ý tưởng</span><br>đến bàn tiệc</h2>
+    </div>
+    <div class="bento">
+      <article class="bento-cell bento-lead bezel reveal">
+        <div class="bezel-core">
+          <div class="bento-pad">
+            <div class="feature-ico"><i class="bi bi-palette2"></i></div>
+            <h4>Xưởng thiết kế trực quan</h4>
+            <p>Chọn hình dáng, tầng, màu kem và đặt phụ kiện trực tiếp lên cốt bánh. Xem trước tức thì từng thay đổi — chiếc bánh hiện ra đúng như bạn hình dung.</p>
+            <span class="bento-tag">SVG 2D · xem trước realtime</span>
+          </div>
+        </div>
+      </article>
+      <article class="bento-cell bezel reveal">
+        <div class="bezel-core">
+          <div class="bento-pad">
+            <div class="feature-ico sm"><i class="bi bi-stars"></i></div>
+            <h4>AI đồng hành</h4>
+            <p>Tả ý tưởng, AI dựng thiết kế và gợi ý phụ kiện hợp từng sự kiện.</p>
+          </div>
+        </div>
+      </article>
+      <article class="bento-cell bezel reveal">
+        <div class="bezel-core">
+          <div class="bento-pad">
+            <div class="feature-ico sm"><i class="bi bi-flower1"></i></div>
+            <h4>Thủ công mỗi ngày</h4>
+            <p>Bơ, kem, trái cây tươi tuyển chọn — vị ngon nguyên bản, không chất bảo quản.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section-c" style="padding-top:0">
+  <div class="container-c">
+    <div class="text-center-c" style="margin-bottom:2.5rem">
+      <span class="eyebrow reveal">Bán chạy nhất</span>
+      <h2 class="title-c reveal d1">Tủ bánh <span class="it">được yêu thích</span></h2>
+    </div>
+    <div class="product-grid" id="featuredGrid"></div>
+    <div class="text-center-c" style="margin-top:2.5rem">
+      <a href="menu.html" class="btn-c btn-gold-c reveal">Xem toàn bộ thực đơn <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA DESIGN -->
+<section class="section-c">
+  <div class="container-c">
+    <div class="cta-band reveal">
+      <div class="cta-ico"><i class="bi bi-magic"></i></div>
+      <h2>Sẵn sàng tạo nên điều ngọt ngào?</h2>
+      <p>Mở xưởng thiết kế và dựng chiếc bánh hoàn hảo cho dịp đặc biệt của bạn.</p>
+      <a href="design.html" class="btn-c" style="background:#fff;color:var(--cocoa-deep);position:relative;z-index:1"><i class="bi bi-magic"></i> Vào xưởng thiết kế</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/SplitText.min.js"></script>
+<script type="module" src="src/js/home.js"></script>
+</body>
+</html>
